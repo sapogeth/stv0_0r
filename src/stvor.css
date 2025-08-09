@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #242424;
+}
+
+#root {
+  max-width: 1280px; /* Уберите или измените это значение для полного растяжения */
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.login-page-stvor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #0d0d0d;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+}
+
+.login-header-stvor {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo-stvor {
+  font-size: 48px;
+  margin: 0;
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.login-main-stvor {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.login-form-container-stvor {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  margin: 20px;
+  border: 1px solid #333;
+}
+
+.form-inner-stvor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-title-stvor {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.button-group-stvor {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn-social-stvor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-social-stvor:hover {
+  background-color: #555;
+}
+
+.social-icon-stvor {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+  filter: invert(1);
+}
+
+@media (max-width: 768px) {
+  .login-form-container-stvor {
+    padding: 30px;
+  }
+  .logo-stvor {
+    font-size: 36px;
+  }
+  .form-title-stvor {
+    font-size: 28px;
+  }
+  .btn-social-stvor {
+    font-size: 15px;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form-container-stvor {
+    padding: 20px;
+  }
+  .logo-stvor {
+    font-size: 30px;
+  }
+  .form-title-stvor {
+    font-size: 24px;
+  }
+  .social-icon-stvor {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .btn-social-stvor {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
