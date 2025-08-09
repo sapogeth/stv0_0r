@@ -1,0 +1,41 @@
+{
+  "name": "stvor1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@mysten/dapp-kit": "^0.17.2",
+    "@mysten/enoki": "^0.11.5",
+    "@mysten/kiosk": "^0.12.21",
+    "@mysten/sui": "^1.37.1",
+    "@mysten/sui.js": "^0.54.1",
+    "@mysten/wallet-adapter-base": "^0.9.0",
+    "@mysten/wallet-kit": "^0.8.6",
+    "@mysten/walrus": "^0.6.0",
+    "@tanstack/react-query": "^5.84.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^6.30.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react-swc": "^3.10.2",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.35.1",
+    "vite": "^5.4.19"
+  },
+  "homepage": "https://sapogeth.github.io/stv0r/"
+}

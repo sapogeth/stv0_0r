@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sui zkLogin Redirect</title>
+    <script type="module">
+      window.onload = () => {
+        try {
+          const params = new URLSearchParams(window.location.hash.slice(1) || window.location.search);
+          const idToken = params.get("id_token");
+          
+          if (idToken) {
+            sessionStorage.setItem("sui-zklogin-id-token", idToken);
+            console.log("ID Token saved to session storage.");
+          } else {
+            console.error("ID Token not found in redirect URL.");
+          }
+        } catch (error) {
+          console.error("Error processing redirect:", error);
+        } finally {
+          window.location.href = "/stv0r/"; // ✅ ИСПРАВЛЕНО
+        }
+      };
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
